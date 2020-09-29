@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HCN</title>
+</head>
+<body>
+<script>
+function Rectangle(width, height){
+    this.width = width;
+    this.height = height;
+
+    this.getPerimeter = function (){
+        let perimeter = (this.width + this.height)*2;
+        return perimeter;
+    }
+    this.getArea = function (){
+        let area = (this.width * this.height);
+        return area;
+    }
+}
+let hcn1 = new Rectangle(1000 , 500);
+let perimeter = hcn1.getPerimeter();
+let area = hcn1.getArea();
+alert('chu vi: ' + perimeter + ' dien tich: ' + area)
+</script>
+<canvas id="myCanvas1" width="1000px" height="500px" style="border:10px solid #d3d3d3;"></canvas>
+</body>
+</html>
